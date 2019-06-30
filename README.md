@@ -9,7 +9,15 @@
 * Swipe right to open in browser action
 * Swipe left to share via action menu
 
-###### Screenshot:
-![Image]()
+###### Screenshots:
 
+<p align="center">
+  <kbd><img src="https://drive.google.com/uc?export=view&id=1giknUx-pSTQle_P_JP9yrXHMjHRAZ0Xq" title="LauncherScreen" width="250"></kbd>
+  <kbd><img src="https://drive.google.com/uc?export=view&id=1aaQcuoVnnCO2oyBS4PwnxF1FgyIxUz33" title="MainView" width="250">
+</p></kbd>
 
+<br>
+<p align="center">
+  <kbd><img src="https://drive.google.com/uc?export=view&id=1nM_zwukZpqn7QAl74gENdtCilZnrJE5h" title="OpenInSafari" width="250"></kbd>
+  <kbd><img src="https://drive.google.com/uc?export=view&id=1bpYgdLxJBJ-1jzgZQiZjexVlb0vbl9ik" title="ShareVia" width="250"></kbd>
+</p>
