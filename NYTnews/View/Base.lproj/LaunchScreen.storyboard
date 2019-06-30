@@ -18,17 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="JMV-VW-u4M">
-                                <rect key="frame" x="8" y="384" width="398" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMV-VW-u4M">
+                                <rect key="frame" x="8" y="348.5" width="398" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JMV-VW-u4M" secondAttribute="height" multiplier="2:1" id="gdS-af-oiY"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="JMV-VW-u4M" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BSz-br-Dzk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JMV-VW-u4M" secondAttribute="trailing" constant="8" id="DIe-vX-vcf"/>
-                            <constraint firstItem="JMV-VW-u4M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="340" id="Dbf-0A-o32"/>
-                            <constraint firstItem="JMV-VW-u4M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="H9F-8s-WXg"/>
-                            <constraint firstItem="JMV-VW-u4M" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="hb7-cX-13Q"/>
+                            <constraint firstItem="JMV-VW-u4M" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="T0s-q4-lXU"/>
+                            <constraint firstItem="JMV-VW-u4M" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gf8-BZ-Kkm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="106" height="137.5"/>
+        <image name="yellow-logo.png" width="1098.7825927734375" height="1421.2174072265625"/>
     </resources>
 </document>

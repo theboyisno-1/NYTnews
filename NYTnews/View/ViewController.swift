@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     private let cellIdentifier = "cell"
     private var viewModelObj: NewsViewModel!
     private let refreshControl = UIRefreshControl()
-
+    private var isAlertVisible : Bool = false
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -30,32 +30,43 @@ class ViewController: UIViewController {
         self.tableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         self.tableView.rowHeight = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 600
-        self.showLoader(withMsg: "Fetching articles")
         self.fetchData()
     }
     
     @objc func refreshTableView(refreshControl: UIRefreshControl) {
         fetchData()
         refreshControl.endRefreshing()
-        showAlert(withTitle: "Done", withMsg: "article feeds refreshed")
     }
     
     func fetchData() -> Void {
+        self.showLoader(withMsg: "Fetching articles")
         viewModelObj.fetchArticles(completion: { isData in
             if (isData){
                 self.hideLoader()
+                self.showAlert(withTitle: "Done", withMsg: "article fetched successfully", isErr: false)
                 self.tableView.reloadData()
             }else{
                 self.hideLoader()
-                self.showAlert(withTitle: "Network error", withMsg: "Unable to fetch articles, Please try later!")
+                self.showAlert(withTitle: "Network error!", withMsg: "Unable to fetch articles, Please try again.", isErr: true)
             }
         })
     }
     
-    func showAlert(withTitle title : String, withMsg msg: String) -> Void {
+    func showAlert(withTitle title : String, withMsg msg: String, isErr: Bool) -> Void {
+        
         let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: "OK", style: .default)
+        let alertAction = UIAlertAction(title: "Ok", style: .default, handler: { (UIAlertAction) -> Void in
+            self.isAlertVisible = false
+        })
         alert.addAction(alertAction)
+        if isErr {
+            let retryAction = UIAlertAction(title: "Retry", style: .default, handler: { (UIAlertAction) -> Void in
+                self.isAlertVisible = false
+                self.fetchData()
+            })
+            alert.addAction(retryAction)
+        }
+        isAlertVisible = true
         present(alert, animated: true)
     }
     

@@ -10,6 +10,7 @@
 		0BA21B72544EFFEA52DA7458 /* Pods_NYTnews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3635CFB46F592CCCBF76D1B /* Pods_NYTnews.framework */; };
 		700E23A422C8909B00739E86 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700E23A222C8909B00739E86 /* MyTableViewCell.swift */; };
 		700E23A522C8909B00739E86 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 700E23A322C8909B00739E86 /* MyTableViewCell.xib */; };
+		700E23A722C9000B00739E86 /* yellow-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 700E23A622C9000B00739E86 /* yellow-logo.png */; };
 		7012611022C4919400DDA76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7012610F22C4919400DDA76F /* AppDelegate.swift */; };
 		7012611222C4919400DDA76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7012611122C4919400DDA76F /* ViewController.swift */; };
 		7012611522C4919400DDA76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7012611322C4919400DDA76F /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		46447BCF727C1342BA6B1B45 /* Pods-NYTnews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NYTnews.release.xcconfig"; path = "Pods/Target Support Files/Pods-NYTnews/Pods-NYTnews.release.xcconfig"; sourceTree = "<group>"; };
 		700E23A222C8909B00739E86 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		700E23A322C8909B00739E86 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
+		700E23A622C9000B00739E86 /* yellow-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "yellow-logo.png"; path = "../View/yellow-logo.png"; sourceTree = "<group>"; };
 		7012610C22C4919400DDA76F /* NYTnews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTnews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7012610F22C4919400DDA76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7012611122C4919400DDA76F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		7088B9B322C495C2002317F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				700E23A622C9000B00739E86 /* yellow-logo.png */,
 				7088B9B722C4D182002317F7 /* News.swift */,
 			);
 			path = Model;
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				700E23A522C8909B00739E86 /* MyTableViewCell.xib in Resources */,
+				700E23A722C9000B00739E86 /* yellow-logo.png in Resources */,
 				7012611A22C4919500DDA76F /* LaunchScreen.storyboard in Resources */,
 				7012611722C4919500DDA76F /* Assets.xcassets in Resources */,
 				7012611522C4919400DDA76F /* Main.storyboard in Resources */,
