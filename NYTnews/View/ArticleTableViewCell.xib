@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="463" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="NYTnews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="436" height="463"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="ArticleTableViewCell" customModule="NYTnews" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="436" height="462.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="RUI-MZ-H5y" userLabel="Wrapper Stack View">
+                        <rect key="frame" x="4" y="4" width="428" height="454.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6AL-Bg-jwF">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="302"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Comprehensive Guide to Taking Your Smartphone Abroad for Cheap" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9R-1v-qcP" userLabel="TitleLabel">
+                                <rect key="frame" x="0.0" y="302" width="428" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhl-xY-Eoa" userLabel="AbstractLabel">
+                                <rect key="frame" x="0.0" y="323.5" width="428" height="19.5"/>
+                                <string key="text">For $15 to $40, you can easily take your phone to a foreign country and enjoy access to apps, maps and the web. But it takes a lot of steps, hence this travel guide.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="By BRIAN X. CHEN" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOc-1a-ScS">
+                                <rect key="frame" x="0.0" y="343" width="428" height="76.5"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="369-Pn-UOM" userLabel="Action Stack View">
+                                <rect key="frame" x="0.0" y="419.5" width="428" height="35"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="qhE-uP-ilZ">
+                                        <rect key="frame" x="124" y="0.0" width="180" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUt-PE-pLs" userLabel="Share Button">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="WUt-PE-pLs" secondAttribute="height" multiplier="1:1" id="oaF-3P-8RT"/>
+                                                </constraints>
+                                                <state key="normal" title="S"/>
+                                                <connections>
+                                                    <action selector="shareButtonDidPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NXw-K5-tVG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44B-qc-uub" userLabel="Open Button">
+                                                <rect key="frame" x="145" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="44B-qc-uub" secondAttribute="height" multiplier="1:1" id="Pxe-iZ-4sO"/>
+                                                </constraints>
+                                                <state key="normal" title="O"/>
+                                                <connections>
+                                                    <action selector="openInBrowserBtnDidPress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eGB-Su-Qby"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="snQ-xb-mzl" firstAttribute="bottom" secondItem="44B-qc-uub" secondAttribute="bottom" id="42c-dD-7zL"/>
+                                            <constraint firstAttribute="width" constant="180" id="Y6o-bt-nkd"/>
+                                            <constraint firstItem="44B-qc-uub" firstAttribute="top" secondItem="snQ-xb-mzl" secondAttribute="top" id="cdV-rW-jro"/>
+                                            <constraint firstItem="snQ-xb-mzl" firstAttribute="bottom" secondItem="WUt-PE-pLs" secondAttribute="bottom" id="dU6-hx-4Xg"/>
+                                            <constraint firstItem="WUt-PE-pLs" firstAttribute="top" secondItem="snQ-xb-mzl" secondAttribute="top" id="i7g-rc-aa6"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="safeArea" id="snQ-xb-mzl"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qhE-uP-ilZ" firstAttribute="centerX" secondItem="369-Pn-UOM" secondAttribute="centerX" id="0Ga-Qd-gjp"/>
+                                    <constraint firstItem="qhE-uP-ilZ" firstAttribute="top" secondItem="369-Pn-UOM" secondAttribute="top" id="L6q-ZN-gLi"/>
+                                    <constraint firstItem="qhE-uP-ilZ" firstAttribute="top" secondItem="369-Pn-UOM" secondAttribute="top" id="MBg-JZ-ste"/>
+                                    <constraint firstAttribute="height" constant="35" id="aCh-k8-59C"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RUI-MZ-H5y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="47A-mu-n01"/>
+                    <constraint firstAttribute="trailing" secondItem="RUI-MZ-H5y" secondAttribute="trailing" constant="4" id="Ofw-Zy-TKc"/>
+                    <constraint firstItem="RUI-MZ-H5y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="lS5-C1-Zg0"/>
+                    <constraint firstAttribute="bottom" secondItem="RUI-MZ-H5y" secondAttribute="bottom" constant="4" id="wk0-2a-n72"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="abstractLabel" destination="nhl-xY-Eoa" id="jvP-tr-mSK"/>
+                <outlet property="articleImgView" destination="6AL-Bg-jwF" id="U2e-V0-ugq"/>
+                <outlet property="byLineLabel" destination="EOc-1a-ScS" id="AJF-bN-ZIM"/>
+                <outlet property="titleLabel" destination="J9R-1v-qcP" id="3mu-Ot-6BS"/>
+                <outlet property="viewContainer" destination="RUI-MZ-H5y" id="dHL-hG-eP8"/>
+            </connections>
+            <point key="canvasLocation" x="143.47826086956522" y="112.16517857142857"/>
+        </tableViewCell>
+    </objects>
+</document>
